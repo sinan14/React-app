@@ -1,16 +1,10 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
-import Footer from './components/Footer';
-// import ExercisesList from "./components/ExercisesList";
-//import EditExercise from "./components/EditExercise";
-import CreateExercise from "./components/CreateExercise";
-import CreateUser from "./components/CreateUser";
+import Footer from "./components/Footer";
 import EmployeeList from "./components/EmployeeList";
-
-import Employee from './components/Employee';
-import EditEmployee from './components/EditEmployee';
+import Employee from "./components/Employee";
+import EditEmployee from "./components/EditEmployee";
 
 function App() {
   return (
@@ -19,8 +13,6 @@ function App() {
       <br />
       <Route exact path="/" component={EmployeeList} />
       <Route path="/edit/:id" component={EditEmployee} />
-      <Route path="/create" component={CreateExercise} />
-      <Route path="/user" component={CreateUser} />
       <Route path="/createmp" component={Employee} />
       <Footer />
     </BrowserRouter>
